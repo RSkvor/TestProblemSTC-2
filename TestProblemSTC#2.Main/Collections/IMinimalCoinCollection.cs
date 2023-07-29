@@ -1,4 +1,4 @@
-﻿namespace TestProblemSTC_2.Collections
+﻿namespace TestProblemSTC_2.Main.Collections
 {
     /// <summary>
     /// Коллекция из разменных монет

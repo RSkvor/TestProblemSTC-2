@@ -1,4 +1,4 @@
-﻿namespace TestProblemSTC_2.Collections
+﻿namespace TestProblemSTC_2.Main.Collections
 {
     /// <inheritdoc/>
     internal class ExchageCoinCollectionTestData : IExchangeCoinCollection

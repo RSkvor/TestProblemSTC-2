@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProblemSTC_2.Collections
+namespace TestProblemSTC_2.Main.Collections
 {
     /// <inheritdoc/>
     internal class MinimalCoinCollection : ICoinCollection

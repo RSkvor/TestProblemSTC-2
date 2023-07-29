@@ -1,6 +1,6 @@
-﻿using TestProblemSTC_2.Collections;
+﻿using TestProblemSTC_2.Main.Collections;
 
-namespace TestProblemSTC_2.Algorithms
+namespace TestProblemSTC_2.Main.Algorithms
 {
     /// <summary>
     /// Интерфейс алгоритмов для нахождения минимального количества монет на заданную сумму.

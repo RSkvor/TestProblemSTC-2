@@ -1,12 +1,11 @@
 ﻿using Ninject;
 using System.Globalization;
-using TestProblemSTC_2.Algorithms;
-using TestProblemSTC_2.Collections;
-using TestProblemSTC_2.Modules;
-using TestProblemSTC_2.Providers;
-using TestProblemSTC_2.Service;
+using TestProblemSTC_2.Main.Algorithms;
+using TestProblemSTC_2.Main.Collections;
+using TestProblemSTC_2.Main.Modules;
+using TestProblemSTC_2.Main.Service;
 
-namespace TestProblemSTC_2
+namespace TestProblemSTC_2.Main
 {
     internal class MainProgram
     {

@@ -1,4 +1,4 @@
-﻿namespace TestProblemSTC_2.Providers
+﻿namespace TestProblemSTC_2.Main.Providers
 {
     public interface IPathProvider
     {

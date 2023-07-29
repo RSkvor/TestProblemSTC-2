@@ -1,6 +1,6 @@
-﻿using TestProblemSTC_2.Service;
+﻿using TestProblemSTC_2.Main.Service;
 
-namespace TestProblemSTC_2.Providers
+namespace TestProblemSTC_2.Main.Providers
 {
     internal class PathProvider : IPathProvider
     {

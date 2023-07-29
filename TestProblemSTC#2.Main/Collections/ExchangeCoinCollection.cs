@@ -1,7 +1,7 @@
-﻿namespace TestProblemSTC_2.Collections
+﻿namespace TestProblemSTC_2.Main.Collections
 {
     /// <inheritdoc/>
-    internal class ExchangeCoinCollection : IExchangeCoinCollection
+    public class ExchangeCoinCollection : IExchangeCoinCollection
     {
         public ExchangeCoinCollection(
             int sumCash,

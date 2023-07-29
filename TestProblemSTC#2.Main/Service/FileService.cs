@@ -1,7 +1,7 @@
-﻿using TestProblemSTC_2.Collections;
-using TestProblemSTC_2.Providers;
+﻿using TestProblemSTC_2.Main.Collections;
+using TestProblemSTC_2.Main.Providers;
 
-namespace TestProblemSTC_2.Service
+namespace TestProblemSTC_2.Main.Service
 {
     /// <summary>
     /// Класс работы с тестовыми файлами

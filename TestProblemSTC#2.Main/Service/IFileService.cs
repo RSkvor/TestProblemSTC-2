@@ -1,6 +1,6 @@
-﻿using TestProblemSTC_2.Collections;
+﻿using TestProblemSTC_2.Main.Collections;
 
-namespace TestProblemSTC_2.Service
+namespace TestProblemSTC_2.Main.Service
 {
     internal interface IFileService
     {

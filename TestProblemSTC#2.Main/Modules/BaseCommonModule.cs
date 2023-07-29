@@ -1,11 +1,11 @@
 ﻿using Ninject.Modules;
-using TestProblemSTC_2.Algorithms;
-using TestProblemSTC_2.Providers;
-using TestProblemSTC_2.Service;
+using TestProblemSTC_2.Main.Algorithms;
+using TestProblemSTC_2.Main.Providers;
+using TestProblemSTC_2.Main.Service;
 
-namespace TestProblemSTC_2.Modules
+namespace TestProblemSTC_2.Main.Modules
 {
-    internal class BaseCommonModule : NinjectModule
+    public class BaseCommonModule : NinjectModule
     {
         public override void Load()
         {
