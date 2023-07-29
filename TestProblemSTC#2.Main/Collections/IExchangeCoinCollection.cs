@@ -4,7 +4,7 @@
     /// Разменщик монет.
     /// Сюда попадают первоначальные условия.
     /// </summary>
-    internal interface IExchangeCoinCollection
+    public interface IExchangeCoinCollection
     {
         /// <summary>
         /// Сумма денег, которую требуется разменять 

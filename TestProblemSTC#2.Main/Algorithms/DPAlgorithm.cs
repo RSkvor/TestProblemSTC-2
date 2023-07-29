@@ -4,7 +4,7 @@ namespace TestProblemSTC_2.Main.Algorithms
 {
     internal class DPAlgorithm : IAlgorithm
     {
-        public List<int> GetMinimalCoins(ExchangeCoinCollection exchangeCoin)
+        public ICoinCollection GetMinimalCoins(IExchangeCoinCollection exchangeCoin)
         {
             if (exchangeCoin is null)
             {
@@ -15,14 +15,14 @@ namespace TestProblemSTC_2.Main.Algorithms
 
             if (DPArray[exchangeCoin.SumCash] == exchangeCoin.SumCash + 1)
             {
-                return new List<int>();
+                return new MinimalCoinCollection( new List<int>());
             }
-            var usingCoins = RestoreCoins(exchangeCoin, DPArray);
+            var usingCoins = new MinimalCoinCollection(RestoreCoins(exchangeCoin, DPArray));
 
             return usingCoins;
         }
 
-        private static int[] FillDPArray(ExchangeCoinCollection exchangeCoin)
+        private static int[] FillDPArray(IExchangeCoinCollection exchangeCoin)
         {
             var dpArray = new int[exchangeCoin.SumCash + 1];
 
@@ -52,7 +52,7 @@ namespace TestProblemSTC_2.Main.Algorithms
         }
 
         private static List<int> RestoreCoins(
-            ExchangeCoinCollection exchangeCoin,
+            IExchangeCoinCollection exchangeCoin,
             int[] dpArray)
         {
             var usingCoins = new List<int>();

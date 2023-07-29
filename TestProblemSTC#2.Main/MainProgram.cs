@@ -24,13 +24,14 @@ namespace TestProblemSTC_2.Main
             if (exchangeCoinCollection.SumCash < 1) 
             {
                 fileService.FileWriter(new MinimalCoinCollection(new List<int>()));
+                Console.WriteLine("Сумма денег не может быть отрицательной.");
                 Console.ReadLine();
                 return;
             }
 
             var algorithm = Kernel.Get<IAlgorithm>();
 
-            var minimalCoinCollector = new MinimalCoinCollection(algorithm.GetMinimalCoins(exchangeCoinCollection));
+            var minimalCoinCollector = algorithm.GetMinimalCoins(exchangeCoinCollection);
 
             fileService.FileWriter(minimalCoinCollector);
 

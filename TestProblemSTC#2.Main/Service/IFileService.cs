@@ -6,6 +6,6 @@ namespace TestProblemSTC_2.Main.Service
     {
         public ExchangeCoinCollection FileReader();
 
-        public void FileWriter(MinimalCoinCollection coinCollection);
+        public void FileWriter(ICoinCollection coinCollection);
     }
 }

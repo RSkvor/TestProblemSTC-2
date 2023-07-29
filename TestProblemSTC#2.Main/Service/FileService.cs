@@ -36,13 +36,13 @@ namespace TestProblemSTC_2.Main.Service
             return exchangeCoinParameters;
         }
 
-        public void FileWriter(MinimalCoinCollection coinCollection)
+        public void FileWriter(ICoinCollection coinCollection)
         {
             using (var writer = new StreamWriter(_outputFilePath))
             {
                 if (coinCollection.Count == 0)
                 {
-                    writer.WriteLine("Данную сумму нельзя получить разменом!");
+                    writer.WriteLine("-99");
                 }
                 else
                 {

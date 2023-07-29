@@ -3,7 +3,7 @@
     /// <summary>
     /// Коллекция из разменных монет
     /// </summary>
-    internal interface ICoinCollection
+    public interface ICoinCollection
     {
         /// <summary>
         /// Количество монет

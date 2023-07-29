@@ -5,8 +5,8 @@ namespace TestProblemSTC_2.Main.Algorithms
     /// <summary>
     /// Интерфейс алгоритмов для нахождения минимального количества монет на заданную сумму.
     /// </summary>
-    internal interface IAlgorithm
+    public interface IAlgorithm
     {
-        public List<int> GetMinimalCoins(ExchangeCoinCollection exchangeCoin);
+        public ICoinCollection GetMinimalCoins(IExchangeCoinCollection exchangeCoin);
     }
 }
