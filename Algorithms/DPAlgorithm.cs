@@ -12,6 +12,11 @@ namespace TestProblemSTC_2.Algorithms
             }
 
             var DPArray = FillDPArray(exchangeCoin);
+
+            if (DPArray[exchangeCoin.SumCash] == exchangeCoin.SumCash + 1)
+            {
+                return new List<int>();
+            }
             var usingCoins = RestoreCoins(exchangeCoin, DPArray);
 
             return usingCoins;
@@ -19,7 +24,7 @@ namespace TestProblemSTC_2.Algorithms
 
         private static int[] FillDPArray(ExchangeCoinCollection exchangeCoin)
         {
-            var dpArray = new int[exchangeCoin.SumCash];
+            var dpArray = new int[exchangeCoin.SumCash + 1];
 
             for (int i = 1; i <= exchangeCoin.SumCash; i++)
             {
@@ -37,7 +42,7 @@ namespace TestProblemSTC_2.Algorithms
                         break;
                     }
 
-                    min = Math.Min(min, dpArray[i - coin]);
+                    min = Math.Min(min, dpArray[i - coin] + 1);
                 }
 
                 dpArray[i] = min;
@@ -51,15 +56,19 @@ namespace TestProblemSTC_2.Algorithms
             int[] dpArray)
         {
             var usingCoins = new List<int>();
-            var minCoins = dpArray[exchangeCoin.SumCash];
             var lastSumCoins = exchangeCoin.SumCash;
-            for (int i = exchangeCoin.SumCash; i > 0; i--)
+            while (lastSumCoins > 0) 
             {
-                if (dpArray[i] == minCoins - 1)
+                foreach (var coin in exchangeCoin.Coins)
                 {
-                    usingCoins.Add(lastSumCoins - i);
-                    lastSumCoins = i;
-                    minCoins--;
+                    if (coin > lastSumCoins) 
+                        continue;
+                    if (dpArray[lastSumCoins] - dpArray[lastSumCoins - coin] == 1)
+                    {
+                        usingCoins.Add(coin);
+                        lastSumCoins -= coin;
+                        continue;
+                    }
                 }
             }
 
