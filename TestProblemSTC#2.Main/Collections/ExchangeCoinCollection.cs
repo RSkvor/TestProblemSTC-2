@@ -1,6 +1,10 @@
 ﻿namespace TestProblemSTC_2.Main.Collections
 {
-    /// <inheritdoc/>
+    /// <summary>
+    /// Стандартный разменщик монет.
+    /// Сюда попадают значения из входного файла.
+    /// В конструкторе монеты сортируются по возрастанию.
+    /// </summary>
     public class ExchangeCoinCollection : IExchangeCoinCollection
     {
         public ExchangeCoinCollection(

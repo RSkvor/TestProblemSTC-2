@@ -6,13 +6,14 @@
     public interface ICoinCollection
     {
         /// <summary>
-        /// Количество монет
+        /// Ответ количества монет в коллекции.
+        /// Если монет в коллекции нет - их количество должно равняться -99.
         /// </summary>
-        public int Count { get; }
+        public int CountCoinAnswer { get; }
 
         /// <summary>
         /// Перечень разменных монет
         /// </summary>
-        public List<int> CoinCollection { get; }
+        public List<int> Coins { get; }
     }
 }

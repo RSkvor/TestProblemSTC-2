@@ -1,6 +1,10 @@
 ﻿namespace TestProblemSTC_2.Main.Collections
 {
-    /// <inheritdoc/>
+    /// <summary>
+    /// Тестовый класс разменника монет.
+    /// По сути - пример заданный из тестового задания.
+    /// Нужен только если файлик пустой.
+    /// </summary>
     internal class ExchageCoinCollectionTestData : IExchangeCoinCollection
     {
         /// <inheritdoc/>
