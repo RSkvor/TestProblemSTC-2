@@ -4,7 +4,6 @@ using System.Globalization;
 using TestProblemSTC_2.Main.Modules;
 using TestProblemSTC_2.Main.Collections;
 using TestProblemSTC_2.Main.Algorithms;
-using Assert = NUnit.Framework.Assert;
 
 namespace TestProblemSTC_2.Test
 {
